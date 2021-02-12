@@ -1,0 +1,44 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    
+body
+    height: 100vh
+    font-family: poppins
+    font-size: 12px
+
+    .container
+        height: 100vh
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+
+        .content-wrapper
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-align: center
+
+
+@media screen and ( max-width:600px  )
+    body
+        height: auto
+        .container
+            grid-template-columns: 1fr
+
+            .left-wrapper
+                display: grid
+                grid-template-columns: 1.5fr 1fr
+@media screen and ( max-width:500px  )
+    body
+        height: auto
+        .container
+            grid-template-columns: 1fr
+
+            .left-wrapper
+                display: grid
+                grid-template-columns: 1fr
+                .svg
+                    display: none
